@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nihal Jangave | Portfolio</title>
+  <!-- Preload clean font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div id="app">
+    <header class="glass-card"
+      style="position: fixed; top: 20px; left: 50%; transform: translateX(-50%); width: 90%; max-width: 1200px; z-index: 100; display: flex; justify-content: space-between; align-items: center; padding: 1rem 2rem;">
+      <div class="logo" style="font-weight: 700; font-size: 1.2rem;">NJ.</div>
+      <nav>
+        <ul style="display: flex; gap: 2rem;">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="section"
+        style="min-height: 100vh; display: flex; align-items: center; justify-content: center; position: relative;">
+        <div class="container" style="text-align: center;">
+          <p style="color: var(--secondary-text); font-size: 1.2rem; margin-bottom: 1rem;">Hello, I'm</p>
+          <h1>Nihal Jangave</h1>
+          <p style="font-size: 1.5rem; color: var(--secondary-text); max-width: 600px; margin: 1rem auto;">Full Stack
+            Developer & Creative Thinker.</p>
+          <div style="margin-top: 2rem;">
+            <a href="#resume" class="btn">View My Work</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About Me</h2>
+          <div class="glass-card" style="margin-top: 2rem;">
+            <p style="font-size: 1.1rem; color: #d0d0d0;">
+              I am a dedicated **Full Stack Developer** with a passion for building seamless, high-performance web
+              applications.
+              With expertise in modern JavaScript frameworks and robust backend architectures, I create digital
+              experiences that are both beautiful and functional.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="resume" class="section">
+        <div class="container">
+          <h2>Resume</h2>
+
+          <div class="resume-grid" style="margin-top: 2rem;">
+            <!-- Experience Column -->
+            <div class="glass-card">
+              <h3 style="color: var(--accent-color); margin-bottom: 1.5rem;">Experience</h3>
+
+              <div class="resume-item">
+                <h4>Senior Web Developer</h4>
+                <span class="resume-date">2023 - Present</span>
+                <p style="color: var(--secondary-text);">Building scalable web apps using Next.js and Node.js.</p>
+              </div>
+
+              <div class="resume-item">
+                <h4>Frontend Developer</h4>
+                <span class="resume-date">2021 - 2023</span>
+                <p style="color: var(--secondary-text);">Focusing on UI/UX and responsive design.</p>
+              </div>
+            </div>
+
+            <!-- Education/Skills Column -->
+            <div class="glass-card">
+              <h3 style="color: var(--accent-color); margin-bottom: 1.5rem;">Education & Skills</h3>
+
+              <div class="resume-item">
+                <h4>Computer Science Degree</h4>
+                <span class="resume-date">2017 - 2021</span>
+                <p style="color: var(--secondary-text);">University of Technology</p>
+              </div>
+
+              <div style="margin-top: 2rem;">
+                <h4 style="margin-bottom: 1rem;">Tech Stack</h4>
+                <div style="display: flex; gap: 0.8rem; flex-wrap: wrap;">
+                  <span class="glass-card" style="padding: 0.5rem 1rem; font-size: 0.9rem;">JavaScript</span>
+                  <span class="glass-card" style="padding: 0.5rem 1rem; font-size: 0.9rem;">React/Vite</span>
+                  <span class="glass-card" style="padding: 0.5rem 1rem; font-size: 0.9rem;">Node.js</span>
+                  <span class="glass-card" style="padding: 0.5rem 1rem; font-size: 0.9rem;">CSS3</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Get in Touch</h2>
+          <div class="glass-card" style="margin-top: 2rem; text-align: center;">
+            <p style="margin-bottom: 2rem; font-size: 1.2rem;">Interested in working together?</p>
+            <a href="mailto:example@email.com" class="btn">Say Hello</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer style="text-align: center; padding: 2rem; color: var(--secondary-text);">
+      © 2025 Nihal Jangave. Built with Vite.
+    </footer>
+  </div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
