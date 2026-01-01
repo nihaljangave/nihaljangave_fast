@@ -56,7 +56,7 @@
             scrollingSpeed: 280,
 
             menu: '.navbar-nav',
-            anchors: ['home', 'about', 'video', 'experience', 'specialization', 'projects', 'partners', 'news'],
+            anchors: ['home', 'about', 'video', 'experience', 'specialization', 'projects', 'partners', 'articles'],
             afterRender: function (anchorLink, index) {
                 NavbarColor();
             },

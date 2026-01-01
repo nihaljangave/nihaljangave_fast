@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Nihal Jangave - Articles">
+    <meta name="author" content="Nihal Jangave">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+
+    <title>Nihal Jangave - Articles</title>
+
+    <style>
+        .filter-btn {
+            background: transparent;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            color: #999;
+            padding: 8px 16px;
+            border-radius: 30px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 0.9rem;
+        }
+
+        .filter-btn:hover,
+        .filter-btn.active {
+            background: #fff;
+            color: #000;
+            border-color: #fff;
+        }
+
+        .article-item {
+            transition: all 0.3s ease;
+        }
+
+        /* Simple hide class */
+        .d-none-filter {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Loader -->
+    <div class="loader">
+        <div class="spinner">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-desctop fixed">
+        <div class="d-flex position-relative w-100">
+            <a class="navbar-brand" href="/">Nihal.</a>
+            <ul class="navbar-nav-desctop mr-auto d-none d-lg-block">
+                <li><a class="nav-link" href="/">Home</a></li>
+                <li><a class="nav-link active" href="#">Articles</a></li>
+            </ul>
+
+            <!-- Social -->
+            <ul class="social-icons mr-auto mr-lg-0 d-none d-sm-block">
+                <li><a href="https://github.com/nihaljangave-hash" target="_blank"><ion-icon
+                            name="logo-github"></ion-icon></a></li>
+                <li><a href="https://x.com/nihaljangave" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a>
+                </li>
+                <li><a href="https://www.linkedin.com/in/nihal-jangave-ab23793a2/" target="_blank"><ion-icon
+                            name="logo-linkedin"></ion-icon></a></li>
+                <li><a href="https://peerlist.io/nihaljangave" target="_blank"> <ion-icon
+                            name="briefcase-outline"></ion-icon></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Navbar Mobile -->
+    <nav id="navbar-mobile" class="navbar navbar-mobile d-lg-none">
+        <ion-icon class="close" name="close-outline"></ion-icon>
+        <ul class="social-icons mr-auto mr-lg-0">
+            <li><a href="https://github.com/nihaljangave-hash" target="_blank"><ion-icon
+                        name="logo-github"></ion-icon></a></li>
+            <li><a href="https://x.com/nihaljangave" target="_blank"><ion-icon name="logo-twitter"></ion-icon></a></li>
+            <li><a href="https://www.linkedin.com/in/nihal-jangave-ab23793a2/" target="_blank"><ion-icon
+                        name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="https://peerlist.io/nihaljangave" target="_blank"> <ion-icon
+                        name="briefcase-outline"></ion-icon></a></li>
+        </ul>
+        <ul class="navbar-nav navbar-nav-mobile">
+            <li><a class="nav-link" href="/">Home</a></li>
+            <li><a class="nav-link active" href="#">Articles</a></li>
+        </ul>
+        <div class="navbar-mobile-footer">
+            <p>© 2025 Nihal Jangave. All Rights Reserved.</p>
+        </div>
+    </nav>
+
+    <!-- Hero / Header -->
+    <section class="section pb-0 pt-5 mt-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h1 class="display-4">Articles</h1>
+                    <p class="lead text-gray">Thoughts on Engineering, Design, and Product.</p>
+                </div>
+            </div>
+
+            <!-- Filters -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div id="article-filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="tech">Tech</button>
+                        <button class="filter-btn" data-filter="design">Design</button>
+                        <button class="filter-btn" data-filter="product">Product</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Articles Grid -->
+            <div class="row" id="articles-grid">
+                <!-- Article 1 -->
+                <div class="col-md-6 col-lg-4 mb-5 article-item" data-category="tech">
+                    <a href="#">
+                        <img alt="" class="w-100 d-block mb-3" src="img/news/640x520-1.jpg">
+                    </a>
+                    <span class="text-gray small">Tech • Dec 20, 2024</span>
+                    <h4 class="mt-2"><a href="#">Scaling Node.js Applications</a></h4>
+                    <p class="text-gray">Best practices for building high-performance backends.</p>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="col-md-6 col-lg-4 mb-5 article-item" data-category="design">
+                    <a href="#">
+                        <img alt="" class="w-100 d-block mb-3" src="img/news/640x520-2.jpg">
+                    </a>
+                    <span class="text-gray small">Design • Nov 15, 2024</span>
+                    <h4 class="mt-2"><a href="#">Minimalism in UI Design</a></h4>
+                    <p class="text-gray">Why less is often more when it comes to user interfaces.</p>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="col-md-6 col-lg-4 mb-5 article-item" data-category="product">
+                    <a href="#">
+                        <img alt="" class="w-100 d-block mb-3" src="img/news/640x520-3.jpg">
+                    </a>
+                    <span class="text-gray small">Product • Oct 10, 2024</span>
+                    <h4 class="mt-2"><a href="#">Product-Led Growth Strategies</a></h4>
+                    <p class="text-gray">How to grow your user base through your product mechanics.</p>
+                </div>
+
+                <!-- Article 4 (Extra for demo) -->
+                <div class="col-md-6 col-lg-4 mb-5 article-item" data-category="tech">
+                    <a href="#">
+                        <img alt="" class="w-100 d-block mb-3" src="img/news/640x520-1.jpg">
+                    </a>
+                    <span class="text-gray small">Tech • Sep 05, 2024</span>
+                    <h4 class="mt-2"><a href="#">The Future of AI Agents</a></h4>
+                    <p class="text-gray">Understanding the impact of agentic workflows in software dev.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="section bg-dark py-5 pb-0">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <h6 class="text-white mb-4">Phone:</h6>
+                        <p class="text-white text-opacity">+1 123 456 78 90</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h6 class="text-white mb-4">Email:</h6>
+                        <p class="text-white text-opacity">nihal@example.com</p>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h6 class="text-white mb-4">Follow me:</h6>
+                        <ul class="social-icons">
+                            <li><a href="https://github.com/nihaljangave-hash" target="_blank"><ion-icon
+                                        name="logo-github"></ion-icon></a></li>
+                            <li><a href="https://x.com/nihaljangave" target="_blank"><ion-icon
+                                        name="logo-twitter"></ion-icon></a></li>
+                            <li><a href="https://www.linkedin.com/in/nihal-jangave-ab23793a2/" target="_blank"><ion-icon
+                                        name="logo-linkedin"></ion-icon></a></li>
+                            <li><a href="https://peerlist.io/nihaljangave" target="_blank"> <ion-icon
+                                        name="briefcase-outline"></ion-icon></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h6 class="text-white mb-4">Subscribe:</h6>
+                        <form class="js-subscribe-form">
+                            <div class="input-group">
+                                <input id="mc-email" type="email" class="form-control" placeholder="Email">
+                                <div class="input-group-append">
+                                    <button class="btn" type="submit">Go</button>
+                                </div>
+                            </div>
+                            <label class="mc-label" for="mc-email" id="mc-notification"></label>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy section-sm">
+            <div class="container">© Copyright 2025 Nihal Jangave. All Rights Reserved</div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="js/jarallax.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <!-- Reuse main interface for general things, but specific logic for this page in articles.js -->
+    <script src="js/interface.js"></script>
+    <script src="js/articles.js"></script>
+</body>
+
+</html>

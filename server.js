@@ -23,8 +23,8 @@ app.post('/api/contact', (req, res) => {
   res.status(200).send('Message received');
 });
 
-// Fallback to index.html for SPA routing (if needed in future)
-app.get('*', (req, res) => {
+// Fallback to index.html for SPA routing (using regex for Express 5 compatibility)
+app.get(/(.*)/, (req, res) => {
   res.sendFile(join(__dirname, 'dist', 'index.html'));
 });
 
